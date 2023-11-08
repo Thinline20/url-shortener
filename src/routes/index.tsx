@@ -45,6 +45,60 @@ export default function Home() {
               </div>
             </form>
           </div>
+          <div class="relative mx-auto mt-7 max-w-xl sm:mt-12">
+            <input
+              type="hidden"
+              id="hs-clipboard-tooltip"
+              value="npm install preline"
+            />
+            <button
+              type="button"
+              class="js-clipboard hs-tooltip relative inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white px-4 py-3 font-mono text-sm text-gray-800 shadow-sm [--trigger:focus] hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-700 dark:bg-slate-900 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              data-clipboard-target="#hs-clipboard-tooltip"
+              data-clipboard-action="copy"
+              data-clipboard-success-text="Copied"
+            >
+              $ npm i preline
+              <span class="border-s ps-3.5 dark:border-gray-700">
+                <svg
+                  class="js-clipboard-default h-4 w-4 transition group-hover:rotate-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                </svg>
+
+                <svg
+                  class="js-clipboard-success hidden h-4 w-4 rotate-6 text-blue-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </span>
+              <span
+                class="hs-tooltip-content invisible z-10 hidden rounded-lg bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity hs-tooltip-shown:visible hs-tooltip-shown:opacity-100 dark:bg-slate-700"
+                role="tooltip"
+              >
+                Copied
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </main>
