@@ -1,3 +1,4 @@
+import { createSignal, createResource } from "solid-js";
 import HiOutlineCheck from "~/components/icons/HiOutlineCheck";
 import HiOutlineChevronDoubleRight from "~/components/icons/HiOutlineChevronDoubleRight";
 
@@ -8,6 +9,8 @@ export default function Home() {
   const onSubmit = (e: Event) => {
     e.preventDefault();
   };
+
+  const onClipboardClick = () => {};
 
   return (
     <main class="h-screen w-screen">
